@@ -1,0 +1,214 @@
+body {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4827d;
+  }
+  
+  input#flap {
+    display: none;
+  }
+  
+  .envelope-container {
+    position: relative;
+  }
+  
+  .envelope-back {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background-color: #d22f27;
+  }
+  
+  .envelope-back:before {
+    content:"";
+    position: absolute;
+    background-color: rgba(0,0,0,0.07);
+    width: 320px;
+    height:10px;
+    border-radius:50%;
+    top:420px;
+  }
+  
+  .card {
+    position: absolute;
+    width:300px;
+    height: 180px;
+    background-color: white;
+    top:10px;
+    left:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:40px;
+    font-family: 'Sacramento', cursive;
+    transition: .1s;
+    z-index:1;
+    cursor: pointer;
+  }
+  
+  .card-front {
+    position: absolute;
+    width:0;
+    height:0;
+    border-bottom: 100px solid #d22f27;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    top:100px;
+    left:0;
+    z-index:3;
+  }
+  
+  .card-front:before, .card-front:after {
+    content:"";
+    position: absolute;
+    border-bottom: 100px solid transparent;
+    border-top: 100px solid transparent;
+    height:0;
+    width:0;
+  }
+  
+  .card-front:before {
+    border-left: 161px solid transparent;
+    border-right: 161px solid #d22f27;
+    top:-100px;
+    left:-162px;
+  }
+  
+  .card-front:after {
+    border-right: 161px solid transparent;
+    border-left: 161px solid #d22f27;
+    top:-100px;
+    left:-160px;
+  }
+  
+  .flap {
+    position: absolute;
+    width:0;
+    height:0;
+    border-top: 110px solid #d7443d;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    top:0;
+    left:0;
+    cursor: pointer;
+    transition: .3s;
+    transform-origin: top;
+    z-index:4;
+  }
+  
+  #flap:checked + .flap {
+    transform: rotateX(180deg);
+  }
+  
+  #flap:checked ~ .card-front {
+    z-index:7;
+  }
+  
+  #flap:checked ~ .card {
+    z-index:4;
+    transform: translateY(-90px);
+  }
+
+  .centered{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  p{
+    text-align: center;
+  }
+  h1{
+    font-size: 5.625rem;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #ffffff;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+}
+h3{
+    font-family: 'Sacramento', cursive;
+    color: #ffffff;
+    text-align: center;
+    font-size: 4rem;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.newYearText{
+    font-size: 5.625rem;
+    text-align: center;
+    color: #d7443d;
+}
+
+.rabbit{
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.red-envelope
+{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    opacity: 40%;
+    left: 10%;
+    bottom: 10%;
+
+    
+    
+}
+
+.text1{
+    position: absolute;
+    opacity: 40%;
+    color: #d7443d;
+    left: 10%;
+    top: 10%;
+    font-size: 2.5rem;
+}
+.text2{
+    position: absolute;
+    opacity: 40%;
+    color: #d7443d;
+    right: 10%;
+    top: 10%;
+    font-size: 2.5rem;
+}
+.text3{
+    position: absolute;
+    opacity: 40%;
+    color: #d7443d;
+    right: 10%;
+    font-size: 2.5rem;
+}
+.text4{
+    position: absolute;
+    opacity: 40%;
+    color: #d7443d;
+    left: 10%;
+    font-size: 2.5rem;
+}
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
