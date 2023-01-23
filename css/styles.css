@@ -16,7 +16,7 @@ body {
   .envelope-back {
     position: relative;
     width: 320px;
-    height: 400px;
+    height: 370px;
     background-color: #d22f27;
   }
   
@@ -156,18 +156,6 @@ h4{
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-.red-envelope
-{
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    opacity: 40%;
-    left: 10%;
-    bottom: 10%;
-
-    
-    
 }
 
 .text1{
